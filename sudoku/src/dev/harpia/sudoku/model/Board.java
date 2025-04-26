@@ -11,6 +11,10 @@ public class Board {
         this.spaces = spaces;
     }
 
+    public List<List<Space>> getSpaces() {
+        return spaces;
+    }
+    
     public GameStatusEnum getGameStatus() {
         if (spaces.stream().flatMap(List::stream).noneMatch(s -> !s.isFixed() && s.getActualValue() != null)) {
             return NOT_STARTED;

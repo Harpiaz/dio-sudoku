@@ -6,4 +6,4 @@ public enum GameStatusEnum {
     INCOMPLETE,
     NOT_STARTED;
 
-}   
+}
